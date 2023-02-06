@@ -106,18 +106,19 @@ int main(void)
   MX_I2C2_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-	DELAY_Init(&htim1);
-	LCD_Init();
-	DS1307_Init(&hi2c2);
-	DHT11_Init(&DHT, GPIOA, DHT11_Pin);
-	TIME_Init(&TIME_DS1307, 30, 32, 9, 5, 4, 2, 23);
-	DS1307_WriteTime(&TIME_DS1307);
-	DS1307_ReadTime(&TIME_DS1307);
-	TIME_Init(&TIME_Display, 0, 0, 0, 0, 0, 0, 0);
+  DELAY_Init(&htim1);
+  LCD_Init();
+  DS1307_Init(&hi2c2);
+  DHT11_Init(&DHT, GPIOA, DHT11_Pin);
+//  TIME_Init(&TIME_DS1307, 30, 32, 9, 5, 4, 2, 23);
+//  DS1307_WriteTime(&TIME_DS1307);
+  TIME_Init(&TIME_Display, 0, 0, 0, 0, 0, 0, 0);
+  DS1307_ReadTime(&TIME_DS1307);
 
-	DISPLAY.Current = CLOCK_DISPLAY;
-	DISPLAY.Last = MAIN_MENU;
-	OPTION_Point.Current = SET_TIME;
+
+  DISPLAY.Current = CLOCK_DISPLAY;
+  DISPLAY.Last = MAIN_MENU;
+  OPTION_Point.Current = SET_TIME;
   /* USER CODE END 2 */
 
   /* Infinite loop */
