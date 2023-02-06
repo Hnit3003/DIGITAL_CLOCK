@@ -1,0 +1,3 @@
+../Core/Src/BUTTON.c:2:6:BUTTON_Handle	24	static
+../Core/Src/BUTTON.c:8:6:BUTTON_Detect	24	static
+../Core/Src/BUTTON.c:39:6:PRESSED_SignalHandle	24	static

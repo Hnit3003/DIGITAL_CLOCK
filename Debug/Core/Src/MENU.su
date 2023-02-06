@@ -1,0 +1,4 @@
+../Core/Src/MENU.c:3:6:MENU_Handle	24	static
+../Core/Src/MENU.c:28:6:OPTION_SetTimeHandle	16	static
+../Core/Src/MENU.c:46:6:OPTION_TempHandle	16	static
+../Core/Src/MENU.c:65:6:OPTION_ExitHandle	16	static

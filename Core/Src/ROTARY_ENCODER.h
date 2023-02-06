@@ -1,0 +1,20 @@
+#ifndef ROTARY_ENCODER_H
+#define ROTARY_ENCODER_H
+
+#include "main.h"
+#include "MENU.h"
+#include "DS1307.h"
+typedef enum
+{
+	STAND,
+	FOLLOW_CW,
+	ANTI_CW
+}ROTARY_State;
+
+void ROTARY_ENCODER_Handle(ROTARY_State *RE_State, MODE *DISPLAY, OPTION *OPTION_Choose, OPTION *OPTION_Point, TIME *TIME_DS1307);
+void ROTARY_ENCODER_Detect(ROTARY_State *RE_State);
+void ROTARY_SignalHandle(ROTARY_State *RE_State, MODE *DISPLAY, OPTION *OPTION_Choose, OPTION *OPTION_Point, TIME *TIME_DS1307);
+void ROTARY_FollowCW_Handle(MODE *DISPLAY, OPTION *OPTION_Choose, OPTION *OPTION_Point, TIME *TIME_DS1307);
+void ROTARY_AntiCW_Handle(MODE *DISPLAY, OPTION *OPTION_Choose, OPTION *OPTION_Point, TIME *TIME_DS1307);
+
+#endif

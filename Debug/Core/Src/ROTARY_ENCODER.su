@@ -1,0 +1,5 @@
+../Core/Src/ROTARY_ENCODER.c:3:6:ROTARY_ENCODER_Handle	32	static
+../Core/Src/ROTARY_ENCODER.c:9:6:ROTARY_ENCODER_Detect	16	static
+../Core/Src/ROTARY_ENCODER.c:33:6:ROTARY_SignalHandle	24	static
+../Core/Src/ROTARY_ENCODER.c:54:6:ROTARY_FollowCW_Handle	24	static
+../Core/Src/ROTARY_ENCODER.c:79:6:ROTARY_AntiCW_Handle	24	static
